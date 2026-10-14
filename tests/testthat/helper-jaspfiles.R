@@ -50,6 +50,14 @@ runJaspFileAnalysis <- function(file, index = 1) {
   analysis <- attr(options, "analysisName")
   dataset  <- jaspTools::extractDatasetFromJASPFile(jaspFile)
 
+  # JASP's default missing value marker is the label "NA"; jaspTools returns it as the literal text "NA",
+  # which would otherwise be coerced to NA with a warning when a column is typed as scale
+  dataset[] <- lapply(dataset, function(column) {
+    if (is.character(column))
+      column[column %in% "NA"] <- NA_character_
+    column
+  })
+
   encoded <- jaspTools:::encodeOptionsAndDataset(options, dataset)
   map     <- encoded[["encodingMap"]]
   names(encoded[["dataset"]]) <- map[["original"]][match(names(encoded[["dataset"]]), map[["encoded"]])]
