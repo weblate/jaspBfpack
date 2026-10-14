@@ -171,12 +171,13 @@
 
   if (!ready) return()
 
+  # the grouping variable is not checked here: it may have any number of levels (correlation and variances use
+  # all of them, the independent samples t-test uses the first two and adds a footnote)
   vars <- c(options[["variables"]],
             options[["dependent"]],
             options[["fixedFactors"]],
             options[["covariates"]],
             options[["predictors"]],
-            options[["groupingVariable"]],
             unlist(options[["pair"]]))
   vars <- vars[vars != ""]
   varsTypes <- c(options[["variables.types"]],
@@ -184,7 +185,6 @@
                  options[["fixedFactors.types"]],
                  options[["covariates.types"]],
                  options[["predictors.types"]],
-                 options[["groupingVariable.type"]],
                  unlist(options[["pair.types"]]))
 
   factors <- vars[varsTypes == "nominal"]

@@ -259,3 +259,48 @@ test_that("contExpon_with_contGamma_in_g2 plot matches", {
   testPlot <- results[["state"]][["figures"]][[plotName]][["obj"]]
   jaspTools::expect_equal_plots(testPlot, "contexpon_with_contgamma_in_g2-trace")
 })
+
+# validation: the grouping variable may have more than two levels, also when the first variable is nominal
+options$priorPosteriorPlot <- FALSE
+options$traceplot <- FALSE
+options$covariates <- list()
+options$variables <- c("contBinom", "contNormal")
+options$variables.types <- c("nominal", "scale")
+options$groupingVariable <- "facFive"
+options$groupingVariable.types <- "nominal"
+
+# typed by hand so that the test does not depend on how jaspTools finds the variable types
+dataset <- jaspTools:::loadCorrectDataset("debug.csv")[, c("contBinom", "contNormal", "facFive")]
+dataset$contBinom <- as.factor(dataset$contBinom)
+dataset$facFive   <- as.factor(dataset$facFive)
+
+set.seed(1)
+results <- jaspTools::runAnalysis("bfpackCorrelation", dataset, options, encodedDataset = TRUE)
+
+test_that("Grouping variable with more than two levels is accepted", {
+  expect_identical(results[["status"]], "complete")
+})
+
+test_that("Posterior Probabilities of the Standard Hypotheses table with five groups matches", {
+  table <- results[["results"]][["bfpackContainer"]][["collection"]][["bfpackContainer_parameterTable"]][["data"]]
+  jaspTools::expect_equal_tables(table,
+                                 list("contNormal_with_contBinom_in_g1", 0.74047206261738, 0.102327511270414,
+                                      0.157200426112206, "contNormal_with_contBinom_in_g2", 0.72216835145521,
+                                      0.193334274845392, 0.084497373699397, "contNormal_with_contBinom_in_g3",
+                                      0.672879793473952, 0.0667743189101171, 0.260345887615931, "contNormal_with_contBinom_in_g4",
+                                      0.73113876915779, 0.176993991458316, 0.0918672393838935, "contNormal_with_contBinom_in_g5",
+                                      0.632276301291696, 0.0706055141787461, 0.297118184529558))
+})
+
+test_that("A nominal variable with more than two levels is still rejected", {
+  options$variables <- c("facFive", "contNormal")
+  dataset <- jaspTools:::loadCorrectDataset("debug.csv")[, c("facFive", "contNormal", "facGender")]
+  dataset$facFive   <- as.factor(dataset$facFive)
+  dataset$facGender <- as.factor(dataset$facGender)
+  options$groupingVariable <- "facGender"
+
+  results <- jaspTools::runAnalysis("bfpackCorrelation", dataset, options, encodedDataset = TRUE)
+
+  expect_identical(results[["status"]], "validationError")
+  expect_match(results[["results"]][["errorMessage"]], "facFive", fixed = TRUE)
+})
