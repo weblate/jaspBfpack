@@ -293,8 +293,8 @@
     if (length(covariates) > 0) {
       form <- eval(parse(text = paste0("~", paste0(covariates, collapse = "+"))))
       # weirdly BFpack always requires the covariate(s) to be in the last columns
-      cIndex <- which(colnames(dataset) == covariates)
-      notcIndex <- which(colnames(dataset) != covariates)
+      cIndex <- which(colnames(dataset) %in% covariates)
+      notcIndex <- which(!colnames(dataset) %in% covariates)
       dataset <- dataset[, c(notcIndex, cIndex)]
     } else {
       form <- NULL
