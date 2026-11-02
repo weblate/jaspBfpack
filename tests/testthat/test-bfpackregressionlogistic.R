@@ -57,7 +57,7 @@ test_that("Coefficients table results match", {
 test_that("Manual hypotheses legend table results match", {
   table <- results[["results"]][["bfpackContainer"]][["collection"]][["bfpackContainer_resultsContainer"]][["collection"]][["bfpackContainer_resultsContainer_legendTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
-                                 list("contNormal___X___contcor1&gt;-.5", "H1", "complement", "H2"
+                                 list("contNormal:contcor1&gt;-.5", "H1", "complement", "H2"
                                  ))
 })
 
@@ -74,13 +74,13 @@ test_that("Posterior probabilities when testing individual parameters table resu
 test_that("Evidence matrix (BFs) table results match", {
   table <- results[["results"]][["bfpackContainer"]][["collection"]][["bfpackContainer_resultsContainer"]][["collection"]][["bfpackContainer_resultsContainer_matrixTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
-                                 list(1, 1.2494281298879, "H1", 0.800366164390519, 1, "H2"))
+                                 list(1, 1.71023797194578, "H1", 0.584713949990408, 1, "H2"))
 })
 
 test_that("Posterior model probability table results match", {
   table <- results[["results"]][["bfpackContainer"]][["collection"]][["bfpackContainer_resultsContainer"]][["collection"]][["bfpackContainer_resultsContainer_postTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
-                                 list("H1", 0.555, "H2", 0.445))
+                                 list("H1", 0.631, "H2", 0.369))
 })
 
 

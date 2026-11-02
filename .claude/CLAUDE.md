@@ -112,12 +112,14 @@ testAnalysis("AnalysisName")
 
 ### Running a Specific Analysis
 
+**ALWAYS pass `view = FALSE` to `runAnalysis()`.** Default is `view = TRUE`, which opens the results in a browser/viewer -- never do that in an agent session.
+
 **With built-in debug dataset:**
 ```r
 options <- jaspTools::analysisOptions("AnalysisName")
 options$someOption <- value
 set.seed(1)
-results <- jaspTools::runAnalysis("AnalysisName", "debug.csv", options)
+results <- jaspTools::runAnalysis("AnalysisName", "debug.csv", options, view = FALSE)
 ```
 
 **From a .jasp example file:**
@@ -127,10 +129,12 @@ opts     <- jaspTools::analysisOptions(jaspFile)
 dataset  <- jaspTools::extractDatasetFromJASPFile(jaspFile)
 encoded  <- jaspTools:::encodeOptionsAndDataset(opts, dataset)
 set.seed(1)
-results  <- jaspTools::runAnalysis("AnalysisName", encoded$dataset, encoded$options, encodedDataset = TRUE)
+results  <- jaspTools::runAnalysis("AnalysisName", encoded$dataset, encoded$options, encodedDataset = TRUE, view = FALSE)
 ```
 
 The encoding step is required because JASP internally encodes variable names and options to resolve ambiguities (e.g., same variable used with different types).
+
+**Exception (this module):** use `runJaspFileAnalysis(file, index)` from `tests/testthat/helper-jaspfiles.R` instead (`source()` it; `file` is a name in `tests/testthat/jaspfiles/other/` or a full path). Under jaspTools `decodeColNames()` is the identity, so manual hypotheses typed with original variable names never match encoded `jaspColumnN` columns and the analysis silently produces no tables. The helper keeps original names and maps renamed options of old files.
 
 **From a user-provided .jasp file:** Use the same pattern above. This is the primary way to reproduce bugs reported by users.
 

@@ -10,8 +10,8 @@ Description: A module for computing Bayes factors for equality, inequality, and 
 License: GPL (>= 3)
 Encoding: UTF-8
 Imports:
-  BFpack,
-  bain (>= 0.2.10),
+  BFpack (>= 1.6.3),
+  bain (>= 0.2.12),
   stats,
   ggplot2,
   stringr,
