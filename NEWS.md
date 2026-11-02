@@ -21,7 +21,7 @@
 * Added unit tests built from example `.jasp` files (`tests/testthat/jaspfiles/`), covering correlation, ANOVA, and linear regression analyses.
 
 ## Changed
-* Updated BFpack to 1.6.3 and bain to 0.2.12 in `renv.lock`. BFpack 1.6.3 requires bain >= 0.2.12; with an older bain, hypothesis tests fail with `could not find function "escape_wholeword"`.
+* Updated BFpack to 1.6.3 and bain to 0.2.12 in `renv.lock` and required these minimum versions in `DESCRIPTION`. BFpack 1.6.3 does not declare that it needs bain >= 0.2.12; with an older bain, hypothesis tests fail with `could not find function "escape_wholeword"`.
 * Correlation with covariates: BFpack fixed the covariance matrix of the regression coefficients in `cor_test()`. This changes the posterior of the correlations and the Bayes factors, more so when the covariates are strongly related to the dependent variables (e.g. Pr(H0) 0.730 to 0.710 in the bmi_with_pa example).
 * Hypotheses with a nonzero boundary (e.g. `b > -.5`): the default prior location is now placed on the common boundary of the constrained hypotheses, which changes the Bayes factors (e.g. posterior model probability 0.555 to 0.631 in the logistic regression test). Hypotheses without a common boundary point now give a warning instead of an error.
 * Interaction terms in the manual hypotheses legend show `:` instead of `___X___`.
