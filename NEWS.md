@@ -20,6 +20,9 @@
 * Added `inst/Upgrades.qml`: `.jasp` files saved with older module versions keep their settings for the renamed options `manualHypothesisBfTable`, `standardHypothesisBfTable` (all analyses), `covariates` (linear and logistic regression), and `pairs` (paired samples t-test).
 * Added unit tests built from example `.jasp` files (`tests/testthat/jaspfiles/`), covering correlation, ANOVA, and linear regression analyses.
 
+## Changed
+* Updated BFpack to 1.6.3 and bain to 0.2.12 in `renv.lock`. BFpack 1.6.3 requires bain >= 0.2.12 (without it hypothesis tests fail with `could not find function "escape_wholeword"`). It fixes the covariance matrix ordering and a covariate-before-dependent-variable error in `cor_test()`. Some results shift slightly (logistic regression, correlation with covariates), and interaction terms in the hypothesis legend now show `:` instead of `___X___`.
+
 ## Fixed
 * Correlation: with more than one covariate, the covariate columns were moved to the end by comparing the column names with the covariates element-wise (`==` recycling) instead of with `%in%`. Depending on the entry order this could permute the covariate columns among themselves. The variables never moved. Covariate order only changes results within Monte Carlo error.
 * The grouping variable (correlation, independent samples t-test, variances) was validated with the type of the first variable. A grouping variable with more than two levels was rejected with "Number of factor levels is ≠ 2" when the first variable was nominal.

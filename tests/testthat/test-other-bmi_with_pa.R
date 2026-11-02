@@ -203,7 +203,7 @@ test_that("Analysis 6: Posterior Model Probability table results match", {
 test_that("Analysis 7: Posterior Probabilities of the Standard Hypotheses table results match", {
   table <- results7[["results"]][["bfpackContainer"]][["collection"]][["bfpackContainer_parameterTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
-    list("pa_with_bmi", 0.730335462702902, 0.0391749252524927, 0.230489612044605
+    list("pa_with_bmi", 0.710446885347024, 0.033347644811034, 0.256205469841942
       )
   )
 })
@@ -218,14 +218,14 @@ test_that("Analysis 7: Manual Hypotheses Legend table results match", {
 test_that("Analysis 7: Evidence Matrix (BFs) table results match", {
   table <- results7[["results"]][["bfpackContainer"]][["collection"]][["bfpackContainer_resultsContainer"]][["collection"]][["bfpackContainer_resultsContainer_matrixTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
-    list(1, 2.70831111136526, "H1", 0.369233798806777, 1, "H2")
+    list(1, 2.453597800868, "H1", 0.407564760469802, 1, "H2")
   )
 })
 
 test_that("Analysis 7: Posterior Model Probability table results match", {
   table <- results7[["results"]][["bfpackContainer"]][["collection"]][["bfpackContainer_resultsContainer"]][["collection"]][["bfpackContainer_resultsContainer_postTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
-    list("H1", 0.730335462702902, "H2", 0.269664537297098)
+    list("H1", 0.710446885347024, "H2", 0.289553114652976)
   )
 })
 

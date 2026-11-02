@@ -54,7 +54,7 @@ test_that("Posterior probabilities for interaction effects table results match",
 test_that("Manual hypotheses legend table results match", {
   table <- results[["results"]][["bfpackContainer"]][["collection"]][["bfpackContainer_resultsContainer"]][["collection"]][["bfpackContainer_resultsContainer_legendTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
-                                 list("facFive=facGenderf=facGenderm___X___facFive", "H1", "complement",
+                                 list("facFive=facGenderf=facGenderm:facFive", "H1", "complement",
                                       "H2"))
 })
 

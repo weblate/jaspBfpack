@@ -19,7 +19,7 @@
   "Packages": {
     "BFpack": {
       "Package": "BFpack",
-      "Version": "1.6.0",
+      "Version": "1.6.3",
       "Source": "Repository",
       "Requirements": [
         "bain",
@@ -302,7 +302,7 @@
     },
     "bain": {
       "Package": "bain",
-      "Version": "0.2.11",
+      "Version": "0.2.12",
       "Source": "Repository",
       "Requirements": [
         "lavaan",
