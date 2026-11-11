@@ -1,0 +1,863 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Language: ar\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+msgctxt "Description|"
+msgid "BFpack"
+msgstr ""
+
+msgctxt "bfpackAnova|"
+msgid ""
+"Available variables from the data set that can be assigned to the analysis."
+msgstr ""
+
+msgctxt "bfpackAnova|"
+msgid "Dependent Variables"
+msgstr ""
+
+msgctxt "bfpackAnova|"
+msgid "Fixed Factors"
+msgstr ""
+
+msgctxt "bfpackAnova|"
+msgid "Covariates"
+msgstr ""
+
+msgctxt "bfpackAnova|"
+msgid "μ"
+msgstr ""
+
+msgctxt "bfpackCorrelation|"
+msgid ""
+"Available variables from the data set that can be assigned to the analysis."
+msgstr ""
+
+msgctxt "bfpackCorrelation|"
+msgid "Variables"
+msgstr ""
+
+msgctxt "bfpackCorrelation|"
+msgid "Grouping Variable"
+msgstr ""
+
+msgctxt "bfpackCorrelation|"
+msgid "Covariates"
+msgstr ""
+
+msgctxt "bfpackCorrelation|"
+msgid "Optional covariates to control for when estimating the correlations."
+msgstr ""
+
+msgctxt "bfpackCorrelation|"
+msgid "ρ"
+msgstr ""
+
+msgctxt "bfpackCorrelation|"
+msgid "each correlation coefficient"
+msgstr ""
+
+msgctxt "bfpackRegressionLinear|"
+msgid ""
+"Available variables from the data set that can be assigned to the analysis."
+msgstr ""
+
+msgctxt "bfpackRegressionLinear|"
+msgid "Dependent Variables"
+msgstr ""
+
+msgctxt "bfpackRegressionLinear|"
+msgid "Predictor Variables"
+msgstr ""
+
+msgctxt "bfpackRegressionLinear|"
+msgid "β"
+msgstr ""
+
+msgctxt "bfpackRegressionLinear|"
+msgid "each regression coefficient"
+msgstr ""
+
+msgctxt "bfpackRegressionLogistic|"
+msgid ""
+"Available variables from the data set that can be assigned to the analysis."
+msgstr ""
+
+msgctxt "bfpackRegressionLogistic|"
+msgid "Dependent Variable"
+msgstr ""
+
+msgctxt "bfpackRegressionLogistic|"
+msgid "Predictor Variables"
+msgstr ""
+
+msgctxt "bfpackRegressionLogistic|"
+msgid "Predictor variables for the logistic regression model."
+msgstr ""
+
+msgctxt "bfpackRegressionLogistic|"
+msgid "β"
+msgstr ""
+
+msgctxt "bfpackRegressionLogistic|"
+msgid "each logistic regression coefficient"
+msgstr ""
+
+msgctxt "bfpackTTestIndependentSamples|"
+msgid ""
+"Available variables from the data set that can be assigned to the analysis."
+msgstr ""
+
+msgctxt "bfpackTTestIndependentSamples|"
+msgid "Variables"
+msgstr ""
+
+msgctxt "bfpackTTestIndependentSamples|"
+msgid "Continuous outcome variable to compare between the two groups."
+msgstr ""
+
+msgctxt "bfpackTTestIndependentSamples|"
+msgid "Grouping Variable"
+msgstr ""
+
+msgctxt "bfpackTTestIndependentSamples|"
+msgid "Nominal variable defining the two independent groups."
+msgstr ""
+
+msgctxt "bfpackTTestIndependentSamples|"
+msgid "difference"
+msgstr ""
+
+msgctxt "bfpackTTestIndependentSamples|"
+msgid "the group mean difference"
+msgstr ""
+
+msgctxt "bfpackTTestMultiSample|"
+msgid ""
+"Available variables from the data set that can be assigned to the analysis."
+msgstr ""
+
+msgctxt "bfpackTTestMultiSample|"
+msgid "Variables"
+msgstr ""
+
+msgctxt "bfpackTTestMultiSample|"
+msgid "Continuous variables whose means are tested simultaneously."
+msgstr ""
+
+msgctxt "bfpackTTestMultiSample|"
+msgid "μ"
+msgstr ""
+
+msgctxt "bfpackTTestMultiSample|"
+msgid "the means of the selected variables"
+msgstr ""
+
+msgctxt "bfpackTTestMultiSample|"
+msgid "Specify test value"
+msgstr ""
+
+#, qt-format
+msgctxt "bfpackTTestMultiSample|"
+msgid "Test value for the mean of %1."
+msgstr ""
+
+msgctxt "bfpackTTestOneSample|"
+msgid "Assign one continuous variable for the one-sample t-test."
+msgstr ""
+
+msgctxt "bfpackTTestOneSample|"
+msgid ""
+"Available variables from the data set that can be assigned to the analysis."
+msgstr ""
+
+msgctxt "bfpackTTestOneSample|"
+msgid "Variable"
+msgstr ""
+
+msgctxt "bfpackTTestOneSample|"
+msgid "Continuous variable whose mean will be tested."
+msgstr ""
+
+msgctxt "bfpackTTestOneSample|"
+msgid "mu"
+msgstr ""
+
+msgctxt "bfpackTTestOneSample|"
+msgid "the population mean"
+msgstr ""
+
+msgctxt "bfpackTTestPairedSamples|"
+msgid "Assign the two continuous variables that form the paired comparison."
+msgstr ""
+
+msgctxt "bfpackTTestPairedSamples|"
+msgid ""
+"Available variables from the data set that can be assigned to the analysis."
+msgstr ""
+
+msgctxt "bfpackTTestPairedSamples|"
+msgid "Pair"
+msgstr ""
+
+msgctxt "bfpackTTestPairedSamples|"
+msgid "Pair the two continuous variables whose mean difference will be tested."
+msgstr ""
+
+msgctxt "bfpackTTestPairedSamples|"
+msgid "difference"
+msgstr ""
+
+msgctxt "bfpackTTestPairedSamples|"
+msgid "the mean difference between the paired variables"
+msgstr ""
+
+msgctxt "bfpackVariances|"
+msgid ""
+"Available variables from the data set that can be assigned to the analysis."
+msgstr ""
+
+msgctxt "bfpackVariances|"
+msgid "Variable"
+msgstr ""
+
+msgctxt "bfpackVariances|"
+msgid "Outcome variable whose group variances will be compared."
+msgstr ""
+
+msgctxt "bfpackVariances|"
+msgid "Grouping Variable"
+msgstr ""
+
+msgctxt "bfpackVariances|"
+msgid "Nominal variable defining the groups whose variances are compared."
+msgstr ""
+
+msgctxt "bfpackVariances|"
+msgid "the group variances"
+msgstr ""
+
+msgctxt "HypothesesWindowManual|"
+msgid "<b>Manual Hypothesis Test</b>"
+msgstr ""
+
+msgctxt "HypothesesWindowManual|"
+msgid "Click for more information"
+msgstr ""
+
+msgctxt "HypothesesWindowManual|"
+msgid "Hypotheses"
+msgstr ""
+
+msgctxt "HypothesesWindowManual|"
+msgid "Prior weight"
+msgstr ""
+
+msgctxt "HypothesesWindowManual|"
+msgid "Include"
+msgstr ""
+
+#, qt-format
+msgctxt "HypothesesWindowManual|"
+msgid "H%1:"
+msgstr ""
+
+msgctxt "HypothesesWindowManual|"
+msgid "Prior weight for this manual hypothesis."
+msgstr ""
+
+msgctxt "HypothesesWindowManual|"
+msgid "Include this manual hypothesis in the analysis."
+msgstr ""
+
+msgctxt "HypothesesWindowManual|"
+msgid "Complement hypothesis"
+msgstr ""
+
+msgctxt "HypothesesWindowManual|"
+msgid "Prior weight assigned to the complement hypothesis."
+msgstr ""
+
+msgctxt "HypothesesWindowManual|"
+msgid "Include the complement hypothesis in the hypothesis set."
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "mu"
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "the means of the selected variables relative to their test values"
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "the group variances"
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "ρ"
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "the correlation coefficients"
+msgstr ""
+
+#, qt-format
+msgctxt "HypothesesWindowStandard|"
+msgid "the parameter %1"
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "<b>Standard Hypothesis Test</b>"
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid ""
+"Tests whether each selected mean equals its test value or differs from it."
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "Tests whether the group variances are equal or unequal."
+msgstr ""
+
+#, qt-format
+msgctxt "HypothesesWindowStandard|"
+msgid "Tests whether %1 is equal to, smaller than, or larger than zero."
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "H0: "
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "H±: "
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "H0: Equal variances"
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "H±: Unequal variances"
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "H-: "
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "H+: "
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "Hypotheses"
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "Test value"
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "Prior weights"
+msgstr ""
+
+#, qt-format
+msgctxt "HypothesesWindowStandard|"
+msgid "Reference value used in the standard hypothesis test for %1."
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "Prior weight for the second standard hypothesis."
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid "Prior weight for the third standard hypothesis."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Options"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Bayes Factor"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Log scale"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Report Bayes factors on the natural logarithm scale."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Bayes factor type"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Fractional Bayes factor"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Adjusted fractional Bayes factor"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Tables"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Select which result tables should be included in the output."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Standard hypotheses: View BFs"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Show the Bayes factor table for the standard hypothesis test."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Manual hypotheses: Computation BFs"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Estimates"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Show the parameter estimates table with uncertainty intervals."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Plots"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Select which plots should be included in the output."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Manual hypotheses plots"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Plot the prior and posterior probabilities of the manual hypotheses."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Prior and posterior plot"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Plot the prior and posterior distributions of the sampled correlations."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Estimation info"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Add estimation summaries to the prior and posterior correlation plot."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Testing info"
+msgstr ""
+
+msgctxt "Options|"
+msgid ""
+"Add testing summaries for the constrained correlation hypotheses to the plot."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Traceplot"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Plot the MCMC sampling traces for the correlations."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Additional Options"
+msgstr ""
+
+msgctxt "Options|"
+msgid ""
+"Set interval levels, standardization, sampling details, and other model-"
+"specific analysis settings."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Uncertainty interval level"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Coverage level of the reported uncertainty interval, for example 95%."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Standardize continuous variables"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Standardize continuous variables before fitting the model."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Variances"
+msgstr ""
+
+msgctxt "Options|"
+msgid ""
+"Assume equal or unequal group variances in the independent samples t-test."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Equal"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Assume the two groups have equal variances."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Unequal"
+msgstr ""
+
+msgctxt "Options|"
+msgid "No. iterations for BF computation"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Number of iterations used when Bayes factors are computed by sampling."
+msgstr ""
+
+msgctxt "Options|"
+msgid "No. iterations for MCMC"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Number of posterior draws used to estimate the correlation model."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Sampling Method"
+msgstr ""
+
+msgctxt "Options|"
+msgid ""
+"Sampling algorithm used for posterior estimation of the correlation matrix."
+msgstr ""
+
+msgctxt "Options|"
+msgid "LKJ"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Use the LKJ method to sample correlation matrices."
+msgstr ""
+
+msgctxt "Options|"
+msgid "LD"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Use the Liu-Daniels method to sample correlation matrices."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Nugget"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Exclude intercept from the model"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Fix the random number seed to make the analysis exactly reproducible."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Interaction terms"
+msgstr ""
+
+msgctxt "Options|"
+msgid ""
+"Select which candidate two-way interaction terms should be added to the "
+"model."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Include"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Include this interaction term in the model."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Effects"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Prior weight"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Main zero effect"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Prior weight for the hypothesis that a main effect is absent."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Main non-zero effect"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Prior weight for the hypothesis that a main effect is present."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Interaction zero effect"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Prior weight for the hypothesis that an interaction effect is absent."
+msgstr ""
+
+msgctxt "Options|"
+msgid "Interaction non-zero effect"
+msgstr ""
+
+msgctxt "Options|"
+msgid "Prior weight for the hypothesis that an interaction effect is present."
+msgstr ""
+
+msgctxt "ParametersWindow|"
+msgid "<b>Parameters:</b>"
+msgstr ""
+
+msgctxt "Description|"
+msgid ""
+"A module for computing Bayes factors for equality, inequality, and order "
+"constrained hypotheses."
+msgstr ""
+
+msgctxt "bfpackAnova|"
+msgid ""
+"Assign dependent variables, fixed factors, and optional covariates for the "
+"(M)AN(C)OVA model."
+msgstr ""
+
+msgctxt "bfpackAnova|"
+msgid ""
+"One or more continuous outcome variables. One dependent variable yields an "
+"AN(C)OVA; multiple dependent variables yield a MAN(C)OVA."
+msgstr ""
+
+msgctxt "bfpackAnova|"
+msgid ""
+"Categorical grouping variables whose mean differences and interactions are "
+"tested in the model."
+msgstr ""
+
+msgctxt "bfpackAnova|"
+msgid ""
+"Continuous predictors to adjust for in the analysis. Adding covariates turns "
+"the model into an ANCOVA or MANCOVA."
+msgstr ""
+
+msgctxt "bfpackAnova|"
+msgid "each adjusted mean or regression effect in the AN(C)OVA model"
+msgstr ""
+
+msgctxt "bfpackCorrelation|"
+msgid ""
+"Assign the variables whose correlations will be tested, plus optional "
+"grouping and covariate variables."
+msgstr ""
+
+msgctxt "bfpackCorrelation|"
+msgid ""
+"Select at least two variables whose correlations will be estimated and "
+"tested. Supported associations include product-moment, polychoric, "
+"tetrachoric, polyserial, and biserial correlations."
+msgstr ""
+
+msgctxt "bfpackCorrelation|"
+msgid ""
+"Optional nominal grouping variable for testing independent correlations "
+"across groups."
+msgstr ""
+
+msgctxt "bfpackRegressionLinear|"
+msgid ""
+"Assign continuous dependent variables and predictor variables for the linear "
+"regression model."
+msgstr ""
+
+msgctxt "bfpackRegressionLinear|"
+msgid ""
+"One or more continuous outcome variables. Multiple dependent variables fit a "
+"multivariate multiple regression."
+msgstr ""
+
+msgctxt "bfpackRegressionLinear|"
+msgid ""
+"Predictor variables for the regression model. Nominal and ordinal predictors "
+"are dummy coded automatically when needed."
+msgstr ""
+
+msgctxt "bfpackRegressionLogistic|"
+msgid ""
+"Assign an ordinal or nominal dependent variable and predictor variables for "
+"the logistic regression model."
+msgstr ""
+
+msgctxt "bfpackRegressionLogistic|"
+msgid ""
+"Outcome variable for the logistic model. Ordinal outcomes fit an ordered "
+"logistic regression; binary nominal outcomes fit a binary logistic "
+"regression."
+msgstr ""
+
+msgctxt "bfpackTTestIndependentSamples|"
+msgid ""
+"Assign one continuous outcome variable and one nominal grouping variable for "
+"the independent samples t-test."
+msgstr ""
+
+msgctxt "bfpackTTestMultiSample|"
+msgid ""
+"Assign the continuous variables whose means will be tested jointly in the "
+"multivariate t-test."
+msgstr ""
+
+msgctxt "bfpackTTestMultiSample|"
+msgid ""
+"Set the reference mean for each selected variable in the standard hypothesis "
+"test."
+msgstr ""
+
+msgctxt "bfpackVariances|"
+msgid ""
+"Assign one outcome variable and one grouping variable for the variance "
+"comparison."
+msgstr ""
+
+msgctxt "HypothesesWindowManual|"
+msgid ""
+"Specify confirmatory hypotheses with equality (=) and order (<, >) "
+"constraints on the available parameters. Separate multiple hypotheses into "
+"rows and optionally include a complement hypothesis."
+msgstr ""
+
+msgctxt "HypothesesWindowManual|"
+msgid ""
+"List of manually specified hypotheses. Use parameter names from the "
+"Parameters box, assign prior weights, and tick Include for the hypotheses "
+"that should be tested."
+msgstr ""
+
+msgctxt "HypothesesWindowManual|"
+msgid ""
+"Enter a constrained hypothesis using the shown parameter names, for example "
+"a = 0, a > 0, or a > b > 0."
+msgstr ""
+
+#, qt-format
+msgctxt "HypothesesWindowStandard|"
+msgid ""
+"Tests whether %1 is equal to, smaller than, or larger than the specified "
+"test value."
+msgstr ""
+
+msgctxt "HypothesesWindowStandard|"
+msgid ""
+"Prior weight for the first standard hypothesis. Larger values assign more "
+"prior probability to that hypothesis."
+msgstr ""
+
+msgctxt "Options|"
+msgid ""
+"Configure Bayes factor reporting, tables, plots, uncertainty intervals, "
+"sampling settings, and model-specific options."
+msgstr ""
+
+msgctxt "Options|"
+msgid ""
+"Choose how the default fractional Bayes factor prior is centered for "
+"hypothesis testing."
+msgstr ""
+
+msgctxt "Options|"
+msgid ""
+"Uses the default fractional Bayes factor, with the fractional prior centered "
+"at the maximum likelihood estimate."
+msgstr ""
+
+msgctxt "Options|"
+msgid ""
+"Uses the adjusted fractional Bayes factor, with the fractional prior "
+"centered at a null value."
+msgstr ""
+
+msgctxt "Options|"
+msgid ""
+"Show the table with fit, complexity, and Bayes factor components for the "
+"manual hypotheses."
+msgstr ""
+
+msgctxt "Options|"
+msgid ""
+"Allow the two groups to have different variances. Bayes factors are then "
+"approximated by iterative sampling."
+msgstr ""
+
+msgctxt "Options|"
+msgid ""
+"Scaling factor used with the LD sampler to keep sampled correlations away "
+"from plus or minus one when needed."
+msgstr ""
+
+msgctxt "Options|"
+msgid ""
+"Remove the intercept from the fitted model. This is often appropriate for "
+"ANOVA-style parameterizations."
+msgstr ""
+
+msgctxt "Options|"
+msgid ""
+"Available two-way interaction terms generated from the selected predictors, "
+"factors, or covariates."
+msgstr ""
+
+msgctxt "Options|"
+msgid ""
+"Prior weights for the omnibus hypotheses that main and interaction effects "
+"are absent or present in the ANOVA model."
+msgstr ""
+
+msgctxt "ParametersWindow|"
+msgid ""
+"Shows the parameter names that are currently available for manual equality "
+"and order constraints. The labels depend on the selected variables and the "
+"fitted model."
+msgstr ""
+
+msgctxt "ParametersWindow|"
+msgid ""
+"The parameters that can be tested in the manual hypothesis test appear here "
+"after you assign variables to the analysis."
+msgstr ""
